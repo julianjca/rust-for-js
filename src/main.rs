@@ -37,4 +37,18 @@ fn main() {
     println!("{:?}", top_scores);
     println!("{:?}", spidermen);
 
+    // tuple
+    // tuple needs to have the same type on each element
+    let mut product = ("iPhone 12 Pro Max", 1099, true);
+    println!("{:?}", product);
+    product = ("PS5", 499, false);
+    // deconstruct
+    let (_, _, is_available) = product;
+
+    // rest operator
+    let [my_score, ..] = top_scores;
+
+    println!("{}", is_available);
+    println!("{}", my_score);
+
 }
