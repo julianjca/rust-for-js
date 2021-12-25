@@ -66,6 +66,7 @@ fn main() {
 
     while_loop();
     loop_array(&mut arr);
+    another_loop();
 }
 
 
@@ -87,5 +88,12 @@ fn while_loop (){
 fn loop_array(a: &mut [i32]) {
     for element in a {
         println!("the value is: {}", element);
+    }
+}
+
+fn another_loop() {
+    println!("Another Loop");
+    for number in (1..4).rev() {
+        println!("{}!", number);
     }
 }
