@@ -12,5 +12,14 @@ fn main() {
 
     const IS_AVAILABLE : bool = true;
 
-    println!("{}", IS_AVAILABLE)
+    println!("{}", IS_AVAILABLE);
+
+    // Scalars
+    let price = 129;
+    let tax = 23.22;
+
+    // f64::from converts price.
+    // :: is like . in javascript
+    let total = f64::from(price) + tax;
+    println!("Total: {} + {} = {}", price, tax, total)
 }
