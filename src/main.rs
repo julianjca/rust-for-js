@@ -62,7 +62,10 @@ fn main() {
 
     println!("The value of number is: {}", number);
 
-    looping();
+    let mut arr = [10, 20, 30, 40, 50];
+
+    while_loop();
+    loop_array(&mut arr);
 }
 
 
@@ -70,7 +73,7 @@ fn plus_one(x: i32) -> i32 {
     x + 1
 }
 
-fn looping(){ 
+fn while_loop (){ 
     let a = [10, 20, 30, 40, 50];
     let mut index = 0;
 
@@ -78,5 +81,11 @@ fn looping(){
         println!("the value is: {}", a[index]);
 
         index += 1;
+    }
+}
+
+fn loop_array(a: &mut [i32]) {
+    for element in a {
+        println!("the value is: {}", element);
     }
 }
