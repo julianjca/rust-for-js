@@ -6,4 +6,11 @@ fn main() {
     println!("{}", name);
     name = "John Doe";
     println!("{}", name);
+
+    // const variable
+    // you need to define the type
+
+    const IS_AVAILABLE : bool = true;
+
+    println!("{}", IS_AVAILABLE)
 }
