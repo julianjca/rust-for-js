@@ -21,5 +21,20 @@ fn main() {
     // f64::from converts price.
     // :: is like . in javascript
     let total = f64::from(price) + tax;
-    println!("Total: {} + {} = {}", price, tax, total)
+    println!("Total: {} + {} = {}", price, tax, total);
+
+    // array
+    let spidermen = ["Tobey Maguire", "Andrew Garfield", "Tom Holland"];
+
+    // initialize array
+    let top_scores: [u32; 3] = [292, 170, 140];
+
+    // every item in an array should have the same type
+    println!("{}", top_scores.len());
+    println!("{}", spidermen.len());
+
+    // printing array
+    println!("{:?}", top_scores);
+    println!("{:?}", spidermen);
+
 }
